@@ -1,0 +1,112 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.BasicTheme": {
+      "version": "9.3.5",
+      "isInstalled": true
+    },
+    "Volo.Abp.Account": {
+      "version": "9.3.5",
+      "isInstalled": true,
+      "creationTime": "10/28/2025 13:17:46 +00:00"
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "9.3.5",
+      "isInstalled": true,
+      "creationTime": "10/28/2025 13:17:46 +00:00"
+    },
+    "Volo.Abp.Identity": {
+      "version": "9.3.5",
+      "isInstalled": true,
+      "creationTime": "10/28/2025 13:17:46 +00:00"
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "9.3.5",
+      "isInstalled": true,
+      "creationTime": "10/28/2025 13:17:46 +00:00"
+    },
+    "Volo.Abp.SettingManagement": {
+      "version": "9.3.5",
+      "isInstalled": true,
+      "creationTime": "10/28/2025 13:17:46 +00:00"
+    },
+    "Volo.Abp.PermissionManagement": {
+      "version": "9.3.5",
+      "isInstalled": true,
+      "creationTime": "10/28/2025 13:17:46 +00:00"
+    },
+    "Volo.Abp.FeatureManagement": {
+      "version": "9.3.5",
+      "isInstalled": true,
+      "creationTime": "10/28/2025 13:17:46 +00:00"
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "ABPNewtonsoftDemo.Application": {
+      "path": "src/ABPNewtonsoftDemo.Application/ABPNewtonsoftDemo.Application.abppkg",
+      "folder": "src"
+    },
+    "ABPNewtonsoftDemo.Application.Tests": {
+      "path": "test/ABPNewtonsoftDemo.Application.Tests/ABPNewtonsoftDemo.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "ABPNewtonsoftDemo.Domain.Shared": {
+      "path": "src/ABPNewtonsoftDemo.Domain.Shared/ABPNewtonsoftDemo.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "ABPNewtonsoftDemo.Application.Contracts": {
+      "path": "src/ABPNewtonsoftDemo.Application.Contracts/ABPNewtonsoftDemo.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "ABPNewtonsoftDemo.HttpApi": {
+      "path": "src/ABPNewtonsoftDemo.HttpApi/ABPNewtonsoftDemo.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "ABPNewtonsoftDemo.HttpApi.Client": {
+      "path": "src/ABPNewtonsoftDemo.HttpApi.Client/ABPNewtonsoftDemo.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "ABPNewtonsoftDemo.Web": {
+      "path": "src/ABPNewtonsoftDemo.Web/ABPNewtonsoftDemo.Web.abppkg",
+      "folder": "src"
+    },
+    "ABPNewtonsoftDemo.Web.Tests": {
+      "path": "test/ABPNewtonsoftDemo.Web.Tests/ABPNewtonsoftDemo.Web.Tests.abppkg",
+      "folder": "test"
+    },
+    "ABPNewtonsoftDemo.EntityFrameworkCore.Tests": {
+      "path": "test/ABPNewtonsoftDemo.EntityFrameworkCore.Tests/ABPNewtonsoftDemo.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "ABPNewtonsoftDemo.EntityFrameworkCore": {
+      "path": "src/ABPNewtonsoftDemo.EntityFrameworkCore/ABPNewtonsoftDemo.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "ABPNewtonsoftDemo.TestBase": {
+      "path": "test/ABPNewtonsoftDemo.TestBase/ABPNewtonsoftDemo.TestBase.abppkg",
+      "folder": "test"
+    },
+    "ABPNewtonsoftDemo.Domain.Tests": {
+      "path": "test/ABPNewtonsoftDemo.Domain.Tests/ABPNewtonsoftDemo.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "ABPNewtonsoftDemo.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/ABPNewtonsoftDemo.HttpApi.Client.ConsoleTestApp/ABPNewtonsoftDemo.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "ABPNewtonsoftDemo.DbMigrator": {
+      "path": "src/ABPNewtonsoftDemo.DbMigrator/ABPNewtonsoftDemo.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "ABPNewtonsoftDemo.Domain": {
+      "path": "src/ABPNewtonsoftDemo.Domain/ABPNewtonsoftDemo.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}

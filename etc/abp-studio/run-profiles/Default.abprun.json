@@ -1,0 +1,32 @@
+﻿{
+  "applications": {
+    "ABPNewtonsoftDemo.Web": {
+      "type": "dotnet-project",
+      "launchUrl": "https://localhost:44364",
+      "path": "../../../src/ABPNewtonsoftDemo.Web/ABPNewtonsoftDemo.Web.csproj",
+      "kubernetesService": ".*-web$",
+      "healthCheckEndpoint": "/health-status",
+      "healthUiEndpoint": "/health-ui",
+      "execution": {
+        "order": 2
+      }
+    }
+  },
+  "containers": {
+    "serviceName": "ABPNewtonsoftDemo-Containers",
+  },
+  "tasks":{
+    "Initialize Solution":{
+    "type": "cli",
+    "runOnSolutionOpen": true,
+    "startCommand": "etc/scripts/initialize-solution.ps1",
+    "workingDirectory": "../../../"
+    },
+    "Migrate Database":{
+    "type": "cli",
+    "runOnSolutionOpen": false,
+    "startCommand": "etc/scripts/migrate-database.ps1",
+    "workingDirectory": "../../../"
+    }
+  }
+}
