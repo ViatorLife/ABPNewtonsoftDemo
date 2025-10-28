@@ -19,7 +19,7 @@ public class TestEventHandler : ILocalEventHandler<TestEvent>, ITransientDepende
     public async Task HandleEventAsync(TestEvent eventData)
     {
         _logger.LogWarning($"Start HandleEventAsync:[{eventData.MethodName}]");
-        Thread.Sleep(10000);
+        await Task.Delay(7000);
         _logger.LogWarning($"End HandleEventAsync:[{eventData.MethodName}]");
     }
 }
