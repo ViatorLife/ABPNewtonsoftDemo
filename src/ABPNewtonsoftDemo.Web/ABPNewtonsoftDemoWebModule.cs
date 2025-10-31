@@ -281,7 +281,7 @@ public class ABPNewtonsoftDemoWebModule : AbpModule
         app.UseCorrelationId();
         app.UseRouting();
         app.MapAbpStaticAssets();
-        app.UseAbpStudioLink();
+        //app.UseAbpStudioLink();
         app.UseAbpSecurityHeaders();
         app.UseAuthentication();
         app.UseAbpOpenIddictValidation();
