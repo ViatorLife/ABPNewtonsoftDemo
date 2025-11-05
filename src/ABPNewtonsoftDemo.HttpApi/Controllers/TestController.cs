@@ -37,4 +37,24 @@ public class TestController : AbpControllerBase
     {
         await _testAppService.TestEventAsync(methodName: "TestVoidAsync");
     }
+
+    [HttpPost("test-list-no-event")]
+    public async Task<List<string>> TestListNoEventAsync()
+    {
+        await _testAppService.TestNoEventAsync(methodName: "TestListNoEventAsync");
+        return new List<string> { "Test1NoEvent", "Test2NoEvent", "Test3NoEvent" };
+    }
+
+    [HttpPost("test-string-no-event")]
+    public async Task<string> TestStringNoEventAsync()
+    {
+        await _testAppService.TestNoEventAsync(methodName: "TestStringNoEventAsync");
+        return "TestStringNoEventAsync";
+    }
+
+    [HttpPost("test-void-no-event")]
+    public async Task TestVoidNoEventAsync()
+    {
+        await _testAppService.TestNoEventAsync(methodName: "TestVoidNoEventAsync");
+    }
 }

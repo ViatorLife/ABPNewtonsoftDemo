@@ -14,6 +14,7 @@ using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.OpenIddict.EntityFrameworkCore;
 using Volo.Abp.TenantManagement;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
+using ABPNewtonsoftDemo.Tests;
 
 namespace ABPNewtonsoftDemo.EntityFrameworkCore;
 
@@ -27,6 +28,7 @@ public class ABPNewtonsoftDemoDbContext :
 {
     /* Add DbSet properties for your Aggregate Roots / Entities here. */
 
+    public DbSet<TestRecord> TestRecords { get; set; }
 
     #region Entities from the modules
 
@@ -87,5 +89,10 @@ public class ABPNewtonsoftDemoDbContext :
         //    b.ConfigureByConvention(); //auto configure for the base class props
         //    //...
         //});
+        builder.Entity<TestRecord>(b =>
+        {
+            b.ToTable(ABPNewtonsoftDemoConsts.DbTablePrefix + "TestRecords", ABPNewtonsoftDemoConsts.DbSchema);
+            b.ConfigureByConvention();
+        });
     }
 }
